@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  	<head>
+  		<meta charset="utf-8"> 
+  		<title>Wywóz nieczystości płynnych - wywóz szambo z gmin Legionowo, Jabłonna, Wieliszew</title>
+  		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Ideally.pl">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   	 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://use.fontawesome.com/6caf13642c.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container-fluid" id="sektor-numer">
+			<div class="container">
+				<p>Wywóz nieczystości: <span>506-321-598</span></p>
+			</div>
+		</div>
+		<hr>
+		<div class="container-fluid" id="sektor-hero">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-6" id="foto">
+						<img src="images/1.png" class="center-block img-responsive"/>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="info">
+						<h1>WYWÓZ NIECZYSTOŚCI PŁYNNYCH</h1>
+						<h2>Wywozimy szambo z gmin</h2>
+						<ul>
+							<li>Legionowo,</li>
+							<li>Jabłonna,</li>
+							<li>Wieliszew,</li>
+						</ul>
+						<h3>Konkurencyjne ceny!</h3>
+						<h4>Wystawiamy faktury i rachunki!</h4>
+						<h5>Od poniedziałku do soboty 6:00 - 21:00</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" id="sektor-onas">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="onas">
+						<p>Oferujemy wywóz szamba dla <span>klientów indywidualnych oraz firm.</span></p>
+						<p>Zapewniamy wszystkim klientom usługę <span>najwyższej jakości</span> dzięki <span>specjalistycznej wiedzy i wykwalifikowanej kadrze.</span></p>
+						<p style="margin-bottom: 15px;">Pracujemy zgodnie z ustawą o odpadach, dlatego <span>nasze usługi są bezpieczne dla ludzi oraz środowiska.</span></p>
+						<p style="margin-bottom: 5px;">Naszą firmę można opisać w trzech słowach:</p>
+						<h6 style="margin-top: 5px;">JAKOŚĆ, BEZPIECZEŃSTWO, TERMINOWOŚĆ</h6>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="foto2">
+						<img src="images/2.jpg" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" id="sektor-kontakt">
+			<div class="container">
+				<p>Zamów wywóz nieczystości, dowiedz się więcej:</p>
+				<strong>506-321-598</strong>
+			</div>
+		</div>
+		<div id="googleMap"></div>
+
+<script>
+function myMap(){
+var locations = [
+      ['Jabłonna', 52.3780883, 20.9170485, 1],
+      ['Legionowo', 52.4044206, 20.9498321, 2],
+      ['Waliszew', 52.4509991, 20.9689293, 3],
+    ];
+
+    var map = new google.maps.Map(document.getElementById('googleMap'), {
+      zoom: 10,
+      center: new google.maps.LatLng(52.4044206, 20.9498321),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+    }
+</script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_pEgo8mBZE0RdsOGAlLFgb3vuwYt6xT4&callback=myMap" type="text/javascript"></script>
+	</body>

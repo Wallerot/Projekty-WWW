@@ -1,0 +1,154 @@
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+#sektor-numer {
+	background-color: #008945;
+	text-align: center;
+}
+
+#sektor-numer .container p {
+	font-size: 27px;
+	font-weight: 600;
+	color: #ffffff;
+	margin-top: 22px;
+	margin-bottom: 14px;
+}
+
+#sektor-numer .container p span {
+	font-size: 36px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+hr {
+	border-width: 3px;
+	color: #ffffff;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#sektor-hero {
+	background-color: #00a453;
+}
+
+#sektor-hero .container img {
+	margin-top: 44px;
+}
+
+#sektor-hero .container #info {
+	margin-top: 61px;
+    margin-bottom: 45px;
+}
+
+#sektor-hero h1 {
+	font-size: 32px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+#sektor-hero h2, #sektor-hero ul li, #sektor-hero h3, #sektor-hero h4, #sektor-hero h5 {
+	font-size: 24px;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+#sektor-hero h2 {
+	margin-bottom: 0px;
+}
+
+#sektor-hero h3 {
+	margin-bottom: 5px;
+	margin-top: 20px;
+}
+
+#sektor-hero h4 {
+	margin-bottom: 5px;
+	margin-top: 0px;
+}
+
+#sektor-hero h5 {
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+#sektor-hero ul {
+	padding-left: 25px;
+}
+
+#sektor-onas .container .row {
+	margin-top: 49px;
+	margin-bottom: 49px;
+}
+
+#sektor-onas .container .row #onas {
+    margin-top: 41px;
+    
+  }
+
+#sektor-onas p {
+	font-size: 19px;
+	font-weight: 400;
+	color: #3e4144;
+}
+
+#sektor-onas p span {
+	font-weight: 600;
+}
+
+#sektor-onas h6 {
+	font-size: 25px;
+	font-weight: 700;
+	color: #028e49;	
+}
+
+#sektor-kontakt {
+	background-color: #008945;
+	text-align: center;
+}
+
+#sektor-kontakt .container {
+	margin-bottom: 17px;
+}
+
+#sektor-kontakt .container p {
+	font-size: 27px;
+	font-weight: 600;
+	color: #ffffff;
+	margin-top: 24px;
+	margin-bottom: 0px;
+}
+
+#sektor-kontakt .container strong {
+	font-size: 36px;
+	font-weight: 700;
+	color: #ffffff;
+	margin-top: 0px;
+	margin-bottom:23px;
+}
+#googleMap {
+    width: 100%; /* Span the entire width of the screen */
+    height: 400px; /* Set the height to 400 pixels */
+}
+
+@media (min-width: 1px) and (max-width: 991px) {
+	#sektor-hero #foto {
+		display:none;
+	}
+}
+@media (min-width: 412px) and (max-width: 414px) {
+	#sektor-numer .container p {
+		font-size: 29px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 321px) {
+	#sektor-numer .container p {
+		font-size: 30px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	#sektor-onas .container .row #foto2 {
+    	margin-top: 60px;
+   }
+ }
